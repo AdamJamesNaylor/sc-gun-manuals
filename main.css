@@ -1,0 +1,79 @@
+body {
+    background: rgb(204,204,204); 
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    padding: 40px;
+  }
+  page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+  }
+  page[size="A4"][layout="portrait"] {
+    width: 29.7cm;
+    height: 21cm;  
+  }
+  page[size="A3"] {
+    width: 29.7cm;
+    height: 42cm;
+  }
+  page[size="A3"][layout="portrait"] {
+    width: 42cm;
+    height: 29.7cm;  
+  }
+  page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+  }
+  page[size="A5"][layout="portrait"] {
+    width: 21cm;
+    height: 14.8cm;  
+  }
+  @media print {
+    body, page {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
+
+  .full-width {
+      width: 21cm;
+  }
+
+  .right {
+      float: right;
+  }
+
+  .center {
+      text-align: center;
+  }
+
+  img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+  h1 {
+      font-size: 300%;
+      font-weight: 100;
+      text-align: center;
+  }
+
+  h2 {
+      font-weight: 100;
+  }
+
+  .warning {
+      background-color: orange;
+      font-weight: bold;
+      padding: 2px 4px;
+      font-size: 110%;
+      margin-right: 4px;
+  }
